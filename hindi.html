@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+ 
+   <header class="navbar">
+  <div class="logo">NETFLIX</div>
+  <div class="nav-right">
+   <div class="lang-select">
+  <a href="index.html">English</a>
+  <a href="hindi.html">हिंदी</a>
+  <a href="bengali.html">বাংলা</a>
+</div>
+
+    <a href="https://www.netflix.com/in/login" class="btn">प्रवेश करें</a>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+ 
+ <section class="hero">
+    <div class="hero-text">
+      <h1>अनलिमिटेड फिल्में, टीवी शो और भी बहुत कुछ।</h1>
+      <p>कहीं भी देखें। कभी भी कैंसिल करें।</p>
+      <p><b>देखना शुरू करने के लिए अपना ईमेल दर्ज करें।</b></p>
+      <div class="email-form">
+        <input type="email" placeholder="ईमेल पता" required />
+        <button type="submit">शुरू करें ></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="movie-cards">
+  <h2 class="text-center"><i>नेटफ्लिक्स पर लोकप्रिय</i></h2>
+  <div class="card-row">
+    <div class="movie-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZiUhX9ml2l15LB5GUirRp8dwSDJENiF2fQg&s" alt="Movie 1">
+      <div class="card-text">JAAT</div>
+    </div>
+    <div class="movie-card">
+      <img src="https://i0.wp.com/thehotjem.com/wp-content/uploads/2025/02/MV5BM2ZiNThlNzItNmY3Ny00NjA2LWJlMjItNTk1NDI3MDMyMTk4XkEyXkFqcGc40._V1_.jpg?fit=1100%2C1467&ssl=1" alt="Movie 2" >
+      <div class="card-text">PEAKY BLINDERS</div>
+    </div>
+    <div class="movie-card">
+      <img src="https://images.justwatch.com/poster/320429069/s718/season-5.jpg" alt="Movie 3">
+      <div class="card-text">STRANGER THINGS</div>
+    </div>
+    <div class="movie-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmqZGCM_RtfbcgCW62sQ4MPUqEsKFYLPJpEg&s" alt="Movie 4">
+      <div class="card-text">RANA NAIDU</div>
+    </div>
+  </div>
+</section>
+<section class="movie-section">
+  <h2>वर्तमान में लोकप्रिय</h2>
+  <div class="scroll-wrapper">
+    <button class="scroll-btn left" onclick="scrollLeft('trending')">&#10094;</button>
+    <div class="card-row" id="trending">
+      <!-- Cards -->
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_.jpg" alt="Movie 1" />
+        <div class="card-text">Money Heist</div>
+      </div>
+      <div class="movie-card">
+        <img src="https://resizing.flixster.com/qeGRjEC1edJQu8dLViQ1BXLeZos=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjYyNzkzLndlYnA=" alt="Movie 1" />
+        <div class="card-text">Breaking Bad</div>
+      </div>
+       <div class="movie-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WasVkVXxoqxzsuQjqd-aQvV3tOgVXWzGrA&s" alt="Movie 1" />
+        <div class="card-text">Kapil Sharma Show</div>
+      </div>
+    </div>
+    <button class="scroll-btn right" onclick="scrollRight('trending')">&#10095;</button>
+  </div>
+</section>
+
+<section class="movie-section">
+  <h2>शीर्ष पसंद</h2>
+  <div class="scroll-wrapper">
+    <button class="scroll-btn left" onclick="scrollLeft('topPicks')">&#10094;</button>
+    <div class="card-row" id="topPicks">
+      <div class="movie-card">
+        <img src="https://i.pinimg.com/736x/5e/0e/5a/5e0e5a3ba85c112a89a1cf604f3198d1.jpg" alt="Movie 2" />
+        <div class="card-text">DARK</div>
+      </div>
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BYTU3ZDVhNmMtMDVlNC00MDc0LTgwNDMtYWE5MTI2ZGI4YWIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie 2" />
+        <div class="card-text">SQUID GAME</div>
+      </div>
+    </div>
+    <button class="scroll-btn right" onclick="scrollRight('topPicks')">&#10095;</button>
+  </div>
+</section>
+
+
+
+
+</body>
+</html>
